@@ -6,7 +6,16 @@ This project implements a simple file encryption and decryption utility in C usi
 
 ## 📂 Project Structure
 
-<pre lang="markdown"> ## 📁 Project Structure ``` fileEncry/ ├── arcfour.c # RC4 encryption logic ├── arcfour.h # RC4 data structures and definitions ├── fileEncry.c # Encryption tool ├── fileEncry.h # Encryption headers ├── fsd.c # Decryption tool ├── fsd.h # Decryption headers └── Makefile # Build configuration ``` </pre>
+```
+fileEncry/
+├── arcfour.c        # RC4 encryption logic
+├── arcfour.h        # RC4 data structures and definitions
+├── fileEncry.c      # Encryption tool
+├── fileEncry.h      # Encryption headers
+├── fsd.c            # Decryption tool
+├── fsd.h            # Decryption headers
+└── Makefile         # Build configuration
+```
 
 ---
 
