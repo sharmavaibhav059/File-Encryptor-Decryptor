@@ -6,21 +6,14 @@ This project implements a simple file encryption and decryption utility in C usi
 
 ## 📂 Project Structure
 
-fileEncry/
-├── arcfour.c # RC4 encryption logic
-├── arcfour.h # RC4 data structures and definitions
-├── fileEncry.c # Encryption tool
-├── fileEncry.h # Encryption headers
-├── fsd.c # Decryption tool
-├── fsd.h # Decryption headers
-└── Makefile # Build configuration
-
+<pre lang="markdown"> ## 📁 Project Structure ``` fileEncry/ ├── arcfour.c # RC4 encryption logic ├── arcfour.h # RC4 data structures and definitions ├── fileEncry.c # Encryption tool ├── fileEncry.h # Encryption headers ├── fsd.c # Decryption tool ├── fsd.h # Decryption headers └── Makefile # Build configuration ``` </pre>
 
 ---
 
 ## 🔧 Build Instructions
 
 ### 🔁 Requirements
+
 - GCC (C23 or C2x support recommended)
 - Linux system (uses `getrandom`, `termios`, etc.)
 
@@ -44,7 +37,7 @@ Example:
 
 ./fileEncry message.txt encrypted.bin
 
-You'll be prompted to enter a key (input hidden). The file will be:
+Youll be prompted to enter a key (input hidden). The file will be:
 
     Padded with secure random bytes
 
@@ -60,3 +53,4 @@ Example:
 
 Make sure to use the same key used during encryption.
 The program reads the padding size, skips it, and decrypts the remaining bytes.
+```
